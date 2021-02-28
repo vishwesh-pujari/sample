@@ -1,0 +1,24 @@
+Design:
+
+Make sure to skecth your layout before coding
+Decide on the number of rows and columns
+Decide if any rows or columns will span multiple cells
+
+Tags:
+	<table> : the container tag
+	<tr> </tr> : the rows
+	<td> </td> : the columns
+
+Table Headings:
+	<th>..</th>
+
+We can combine multiple rows and columns using the rowspan and colspan attributes
+rowspan="2" for 2 rows, colspan="5" for spanning across 5 columns
+
+The border attribute
+<table border="1"> marks the border to the table
+But it is recommended to keep styling out of the css code
+
+Captions:
+We can use <caption> tag to put caption to the table
+	

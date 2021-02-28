@@ -1,0 +1,68 @@
+Images : It's more than the tag
+
+1)
+Many file types are supported
+    JPEG (.jpg and .jpeg), GIF, and PNG
+    SVG and BMP are additional options
+    File extensions must be included
+
+2)
+Every image must be downloaded, so it will have some size. Hence viewers of the webpage also have to load those images.
+Hence size of the image can also be a factor for how fast or slow the webpage is.
+Every image in our code requires an http request
+
+3) image sizes:
+When we link to an image, the browser displays the image as big or small as the file
+Solution to above problem : Change the file / use width-height attributes 
+We can use paint in windows to change the size of the file
+
+4) Using width and height attributes:
+We should always strive to keep style out of our html code.
+But <img> tag is an exception, it includes both width and height attributes
+
+<figure>
+    <img src="" width="500px" alt="">
+    <figcaption> </figcaption>
+</figure>
+
+In this case browser determines the height proportionate to the width
+We can add both width and height also.
+
+5) Best solution : Use %
+
+<figure>
+    <img src="" width="500%" alt="">
+    <figcaption> </figcaption>
+</figure>
+
+This sets the width to 50% of the size of the browser window and not the size of the picture.
+Also using % allows the image to shrink or expand as the size of the screen is changed
+
+6) Favicons:
+We can put image/logo/icon next to the title of our page in the title bar
+This must go in the head section
+
+<link rel="icon" type="image/png" href="file.png"/>
+
+We cannot use jpeg or gif for logos.
+It either needs to be a special icon image or a .png
+
+7) Alternative text attributes:
+    a) Provides textual alternative to non-text content
+    b) Read by screen readers (Screen Readers are essentially to people who are blind)
+    c) Displayed in place of images
+    d) Provides semantic meaning for search engines
+
+    Creating good alt text:
+        Be accurate
+        Be succint (briefly and clearly expressed)
+        Don't be redundant
+        Don't include "picture of.." or "graphic of..."
+
+    Empty alt text:
+        It's okay to leave alt text empty (null)
+            Decorative images used for non-informative purposes
+        But do not skip the alt tag!
+        Write alt=""
+        Writing empty alt tells the user that we haven't forgotten to add it, instead we didn't want to.
+    

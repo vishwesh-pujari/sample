@@ -1,0 +1,42 @@
+<!--Font Awesome
+Used for getting images and icons
+cdn : content delivery network
+https://www.w3schools.com/icons/fontawesome_icons_intro.asp-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/12f2d0c846.js" crossorigin="anonymous"></script> <!--Include this line-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!--Include this also-->
+    <title>Font Awesome</title>
+</head>
+<body>
+    <i class="fas fa-angry"></i> <!--i tag is used for icons-->
+    <i class="fas fa-angry fa-xs"></i> <!--xtra small-->
+    <i class="fas fa-angry fa-md"></i> <!--medium-->
+    <i class="fas fa-angry fa-lg"></i> <!--large-->
+    <i class="fas fa-angry fa-2x"></i> <!--2 times-->
+    <i class="fas fa-angry fa-3x"></i>
+    <br>
+    <i class="fas fa-address-card fa-3x"></i>
+
+    <!--
+        Disadvantages of icons
+        Screen readers don't recognize icons
+    -->
+
+    <a href="https://twitter.com/?lang=en-in"><i class="fab fa-twitter fa-5x"></i></a> <!--We can use icons in place of text for anchor tags-->
+    <a href="https://www.google.com"><i class="fab fa-google fa-5x"></i></a>
+    <a href="https://www.linkedin.com"><i class="fab fa-linkedin fa-5x"></i></a>
+
+    <!--But the screen readers dont't understand where the link is going to take us to because there is no text, just a logo -->
+    <!--We can use aria-label to fix this problem-->
+    <!--aria-label tells screen readers where this logo is going to take us to
+    We can use aria-labels either in the i tag or in the a tag
+    By including aria-label we are increasing the accessibility-->
+
+    <a href="https://www.google.com" aria-label="Google"><i class="fab fa-google fa-5x"></i></a>
+</body>
+</html>

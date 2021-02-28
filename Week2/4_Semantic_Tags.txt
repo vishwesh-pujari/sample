@@ -1,0 +1,82 @@
+Using semantic tags:
+
+1)
+In the beginning there was div
+<div> was a way to group related things together
+Divs almost always had special classes/ids associated with them
+
+<div class="header">....</div>
+<div class="section">....</div>
+<div class="footer">....</div>
+
+2)
+Header Tags:
+<header>
+A group of introductory or navigational aids: title, navigational links, etc.
+
+<header>
+    <h1>This is the title</h1>
+    <h2>Author is Vishwesh</h2>
+</header>
+
+<header> tag is just a block tag, there is nothing special about it. No extra formatting or anything
+However it does let the user know that this is the header section
+
+<header> should not be confused with the <head> or the different heading tags
+<head> tag is for metadata
+<header> tag is more of an aid 
+
+3) 
+<nav> tag
+A section of the page that links to other pages or to parts within the page
+Often found in the <header> tag
+
+<nav>
+    <ul>
+        <li><a href="">Overview</a></li>
+        <li><a href="">History</a></li>
+        <li><a href="">Development</a></li>
+    </ul>
+</nav>
+
+4)
+<footer> tag
+A section that contains info such as copyright data, related documents, and links to social media
+Typically at the bottom of the page but not required
+
+<footer>
+    &copy; 2015 by Vishwesh Vivek Pujari
+    <a href=""></a> 
+</footer> 
+
+Footer tag also doesn't have any special meaning. It does not make the text go to the bottom neither
+
+5) 
+<figure> tag
+Has more semantics than <img>
+
+Can include : 
+    a) caption
+    b) multiple multi-media resources
+
+<figure>
+    <img src="" alt="">
+    <figcaption>Enter your caption here</figcaption>
+</figure>
+
+This <figcaption> can be shown to someone who cannot see the image
+
+Other new tags:
+a) Structural elements:
+    article, aside, main, menuitem, summary, section
+b) Form elements:
+    datalist, keygen, output
+c) Input types:
+    color, date, email, list
+d) Graphics Element:
+    canvas, svg
+e) Media elements:
+    audio, embed, source, track, video
+
+The age of <div> is ending.
+Semantic tags help guide users to information in our page

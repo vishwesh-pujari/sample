@@ -1,0 +1,3 @@
+Create a index.html file and write basic code in it.
+
+index.html is conventionally used to name the main page of the website

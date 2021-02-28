@@ -1,0 +1,86 @@
+Tags have a beginning and an end
+
+<h1>Hello World</h1>
+start          end 
+
+<img src="x.gif" />
+Self closing tag 
+
+Some tags have attributes (src, href, etc)
+
+1) Display Attribute :
+    One of the most important attribute of any element
+    The 2 most common are block and inline
+
+    a) block: Can take width and height
+        Newline is inserted before and after it eg, it takes up the whole width
+    b) inline : cannot take width and height
+        Only uses as much space as needed to contain the element
+
+2) Common Tags:
+    a) Headings (block elements)
+        <h1>, <h2>, <h3>, <h4>, <h5>, <h6>
+        These tags have syntax and sematics
+        These tags have semantics becoz text written in <h1> tag is considered to be highly important
+    
+    b) Paragraph (block element)
+        <p>............</p>
+        It should only contain inline elements
+        So we can write text and insert pictures in a Paragraph
+        But we should never put a paragraph inside a paragraph
+        We should also never put a heading inside a paragraph
+
+    c) Div Tags (block element):
+        Generic section which tends to be larger than a paragraph
+        There is no semantic meaning behind a div
+
+3) More Tags:
+    a) Ordered Lists: By default, it puts each list item as 1 2 3 ... We can change the kind of numbering of attributes
+        <ol>
+            <li> Item one </li>
+            <li> Item two </li>
+        </ol>
+    
+    b) Unordered Lists : It uses a small circle before each list item. We can change the bullet points using attributes
+        <ul>
+            <li> Item one </li>
+            <li> Item two </li>
+        </ul>
+
+    c) Line Break
+        <br>
+        Browser doesn't put a newline if we just include a newline in the text. It only puts a newline if <br> tag is mentioned.
+
+4) Attributes:
+    Attributes provide additional information about an element
+    Always specified in the start tag
+    They come in name value pairs
+
+5) Images:
+    img tag (inline):
+    <img src="myPicture.jpg" alt="Image of Coleen"/>
+    src attribute : Name of picture is mentioned here
+    alt attribute : alternative text. If there is any problem in displaying the picture then this text is shown.
+
+    <img src="logo.jpg"        Image filename
+         alt="company logo"    Info for screen readers, broken links
+         title="My Title"      Displays on hover  
+         class="thumbnail"/>   Extra formatting (height, width, etc)
+
+6) More Attributes:
+    a) class : applies special properties to group of elements
+    b) id : specifies a unique id to one element on the page, for javascript
+    c) style : specifies a certain visual style (avoid this!)
+    d) accesskey : a shorcut keyboard key to access that element. Important for accessibility.
+    e) tabindex : the order elements will come into focus using the tab key
+                    If we want users to go to some important element using tab then we can set a high tab index for it
+                    high tab index is actually a smaller number. tabindex="1" is the highest priority
+
+7) Special Entities:
+    To print : 
+    a) < : &lt;   here lt stands for less than
+    b) > : &gt;
+    c) Copyright Symbol : &copy;
+    d) blank space : &nbsp;
+    e) cent : &cent;
+    f) & : &amp;

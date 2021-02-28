@@ -1,0 +1,31 @@
+Multimedia : Video and Audio
+
+1) <video> tag uses a src attribute or embedded <source>, similar to img
+
+Common attributes:
+	height, width (height and width of video)
+	autoplay (whether or not to autoplay the video when page loads)
+	loop (loop the video)
+	controls. Always include controls in the video. So that user can start stop the video
+	controls and loops are like boolean attributes. They don't take any value
+
+Text inside <video>..</video> is displayed if browser cannot support tag
+
+2) <audio> tag uses a src attribute to link to audio file typically .mp3 or .wav
+
+Common Attributes:
+	autoplay, controls, loop
+	buffered
+	muted
+	volume
+
+3) Setting clips
+	We can play clips by adding to the src attribute
+	.ext#t=5,25     from 5 secs to 25 secs only
+	.ext#t=,25      from beginning to 25 secs
+	.ext#t=,1:38:45
+	.ext#t=42       from 42 secs to end
+
+4) Accessibilty issues:
+	Make sure to provide links to plugins
+	Include text description and close calptioning

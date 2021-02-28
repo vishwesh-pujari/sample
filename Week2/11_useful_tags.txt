@@ -1,0 +1,32 @@
+Choosing your tags:
+1) Generic Tags : <p>, <div>
+2) Semantic Tags are better : <header> <nav> <footer> <figure>
+
+Block Tags :
+1) Containers : We can group data together
+		<article> <aside> <section> <main>
+
+2) <hr> - horizontal rule
+3) <address> - Semantic tag. Doesn't provide any special formatting to the address. Screen readers can quickly find an address if written in <address>
+4) <blockquote> - has cite attribute. It indents the code and put quotation marks around it.
+			cite attribute means that search engines can help others come to our page
+			cite="napolean" means that whenever any user will search napolean then search engine can bring user to our page
+5) <details> with <summary>
+	We can open and close the info
+	It is not supported on firefox
+
+Inline Tags :
+1) <span> was the original inline tag for plain text
+2) <cite> - makes it easier for people and bots to search the code for this specific information
+3) <abbr> - abbreviation. When we hover our mouse over say Sun then Sunday pops up. This will happen if we have put Sunday in abbr
+4) <time> - completely semantic. The party took place at New Year's eve. Here even if New Year's eve is not literally time we can put it in time tag
+5) <code> - To display code
+6) <sub> and <sup> subscript and superscript - For mathematical formulae
+
+Tags that need "more" (i.e CSS or Javascript):
+1) <button>
+2) <meter>
+3) <progress>
+4) <iframe> - often used to embed documents
+5) <bdo> - bidirectional orientation. attribute dir (ltr - left to right or rtl - right to left) 
+6) <map> with <area> -- creates clickable element in image but needs javascript 

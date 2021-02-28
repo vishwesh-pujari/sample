@@ -1,0 +1,64 @@
+Links are what make the web a web
+
+The interlinked nature of the web leads to the "knowledge" that search engines appear to have
+
+Anchor Links:
+    <a> tag
+    <a href="https://www.google.com">Content</a>
+    The <a> stands for anchor links
+    href : hyper-reference : location of new content
+    <a> tag needs a hyper-reference and Content
+    content : The clickable part (text or image)
+
+Types of links:
+    Absolute Links
+    Relative
+    Internal
+    Graphical
+
+1) Absolute reference:
+	<a href="http://www.google.com/">Google</a>
+	We need to provide a complete url in case of absolute reference
+ 	this link is used when we want to link to a different others page
+
+2) Relative reference:
+	a) href="page2.html"
+	page2.html is present in the same folder
+	b) href="docs/page2.html"
+	page2.html is present in the docs directory
+	c) <a href="#history">History Section</a>
+	This makes use of id tag
+	Link to a different history location in the same file
+
+3) Benefits of local / relative links:
+	Even if we move our project directory from one place to another, we don't have to rename everything
+
+4) Links should never have folders that are specific to our computer
+	eg C:\page2.html
+
+5) Using images as link:
+	The clickable component doesn't have to be text
+	It can be an img
+	<a><img></a>
+
+6) Usability Issues:
+	Make sure that the clickable component has an informative name
+	Info in the images should be available to those who can't see the image (i.e alt text)
+
+7) Embedded links
+	Use <div id="first">
+		This is the first content
+	    </div>
+	    <a href="#first">First section</a>
+
+8) Targets:
+	Anchors can take a target attribute:
+		_self : default one. Opens the hyperlink in the same tab
+		_blank : opens in new tab
+		_top and _parent
+
+A page without link is extremely rare
+# marks make links internal
+
+<a href="wikipedia.org"> gives an error
+This is bcoz browser tries to look at wikipedia.org file in the same folder

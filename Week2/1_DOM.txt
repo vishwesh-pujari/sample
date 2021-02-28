@@ -1,0 +1,51 @@
+DOM : Document Object Model
+
+Basis of HTML5 is "New Features should be based on HTML, CSS, the DOM and Javascript"
+
+DOM provides common tree like structures that all pages should follow
+
+HTMl is built on the DOM
+                                            Document
+                                                |
+                                        Root Element <html>
+                                                |
+                             ----------------------------------------------
+                             |                                             |
+                        Element <head>                                 Element <body>
+                             |                                     ------------------------
+                       Element <title>                                       |            |
+                             |                                   Attribute   - Element    Element 
+                        Text "my title"                           "href"     - <a>         <h1>
+                                                                    |                       |
+                                                                Text "my link"               Text "my header"
+
+Three Parts of a well formed Document :
+1) Doctype
+    Version of HTML that we are using
+2) head
+    Metadata : Extra Info
+3) Body :
+    Displayble content
+
+1) Doctype:
+HTML5:
+    <!DOCTYPE html>
+
+2) Head:
+    Additional info used by the browser:
+        Meta Data : Language, title (Which we see on the tab of the browser)
+        Supporting FIles : Javascript, Styling, Add-ons
+    Other than title, metadata is not displayed
+
+3) Body :
+    Bulk of our page
+    Important to write well formatted (tree-like code). i.e every tag has opening and ending
+
+To validate your code go to https://validator.w3.org
+
+Well Formed tags using DOM structure : 
+    Use beginning and end tags
+    Close inner tags before outer ones
+    Use valid attributes
+
+Browsers will fix bad code but not always well. Use a validator to check your code
